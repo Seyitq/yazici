@@ -66,10 +66,10 @@ export default function AdminLayout({
         <div className="p-5 border-b border-gray-700 flex items-center justify-between">
           <Link href="/admin" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-neon/10 border border-neon/30 flex items-center justify-center">
-              <span className="text-neon font-bold text-sm">G</span>
+              <span className="text-neon font-bold text-sm">Y</span>
             </div>
             <div>
-              <span className="text-white font-bold text-sm">GREEN</span>
+              <span className="text-white font-bold text-sm">YAZICI</span>
               <span className="text-neon font-bold text-sm ml-1">ADMIN</span>
             </div>
           </Link>
@@ -134,7 +134,7 @@ export default function AdminLayout({
           >
             <HiOutlineMenuAlt2 size={24} />
           </button>
-          <span className="text-white font-bold text-sm">GREEN</span>
+          <span className="text-white font-bold text-sm">YAZICI</span>
           <span className="text-neon font-bold text-sm">ADMIN</span>
         </div>
         <div className="p-4 md:p-6 lg:p-8">{children}</div>

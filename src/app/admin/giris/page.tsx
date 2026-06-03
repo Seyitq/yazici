@@ -42,7 +42,7 @@ export default function AdminGirisPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-2xl bg-neon/10 border border-neon/30 flex items-center justify-center mx-auto mb-4">
-            <span className="text-neon font-bold text-2xl">G</span>
+            <span className="text-neon font-bold text-2xl">Y</span>
           </div>
           <h1 className="text-2xl font-heading font-bold text-white">
             Admin Paneli
