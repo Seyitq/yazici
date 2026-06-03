@@ -3,6 +3,9 @@ node_modules/
 .pnp
 .pnp.js
 
+# Claude / AI tools
+.claude/
+
 # Next.js
 .next/
 out/
