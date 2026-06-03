@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-dark text-gray-800 antialiased;
+  }
+
+  ::selection {
+    @apply bg-neon/30 text-dark-500;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neon/50;
+  }
+}
+
+@layer components {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(26, 79, 160, 0.5), 0 0 40px rgba(26, 79, 160, 0.2);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(212, 163, 28, 0.5), 0 0 40px rgba(212, 163, 28, 0.2);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 15px rgba(26, 79, 160, 0.15), inset 0 0 15px rgba(26, 79, 160, 0.03);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(26, 79, 160, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26, 79, 160, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-dark-300;
+  }
+
+  .btn-primary {
+    @apply bg-neon text-white font-semibold px-6 py-3 rounded-lg 
+           hover:bg-neon-dim transition-all duration-300 
+           hover:shadow-neon active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border border-neon text-neon px-6 py-3 rounded-lg 
+           hover:bg-neon/10 transition-all duration-300
+           active:scale-95;
+  }
+
+  .btn-gold {
+    @apply bg-neon text-white font-semibold px-6 py-3 rounded-lg 
+           hover:bg-neon-dim transition-all duration-300 
+           hover:shadow-neon active:scale-95;
+  }
+
+  .card-dark {
+    @apply bg-white border border-dark-300 rounded-2xl 
+           hover:border-neon/30 transition-all duration-500;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-gradient {
+    @apply bg-gradient-to-r from-neon via-neon-dim to-neon bg-clip-text text-transparent;
+  }
+}
