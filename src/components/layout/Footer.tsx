@@ -116,9 +116,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <HiOutlineLocationMarker className="text-neon mt-0.5 shrink-0" size={18} />
                 <span className="text-gray-500 text-sm">
-                  Kanuni Sultan Süleyman Bulvarı 5/E
+                  Osmangazi, Bademlik Yolu Cd. No:179
                   <br />
-                  Ametist Life Beytepe, Ankara 06800
+                  06280 Keçiören/Ankara
                 </span>
               </li>
               <li className="flex items-center gap-3">
